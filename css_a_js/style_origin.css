@@ -58,6 +58,12 @@
     border-radius: 20px;
 }
 
+.btn:hover{
+    background: #5eafc3;
+    transition: .5s;
+}
+
+
 
 /**** TOP ****/
 .top{
@@ -1125,3 +1131,11 @@ footer{
     }
 }
 
+
+
+/******** Obchodní podmínky ******/
+
+.link-a{
+    color: var(--color-dark-blue);
+    font-weight: 700;
+}
