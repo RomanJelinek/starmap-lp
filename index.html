@@ -1,345 +1,595 @@
 <html lang="cs">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css_a_js/normalize.css">
-    <link rel="stylesheet" href="css_a_js/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css_a_js/normalize.css" />
+    <link rel="stylesheet" href="css_a_js/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
 
-    <link rel="apple-touch-icon" sizes="152x152" href="files/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="files/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="files/favicon/favicon-16x16.png">
-    <link rel="manifest" href="files/favicon/site.webmanifest">
-    <link rel="mask-icon" href="files/favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="files/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="files/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="files/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="files/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="files/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
 
     <title>Hvězdná mapa Vašeho životního okamžiku | Starly.</title>
-</head>
-<body>
-    
+
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = '2.0';
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        'script',
+        'https://connect.facebook.net/en_US/fbevents.js'
+      );
+      fbq('init', '605664988014947');
+      fbq('track', 'PageView');
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=605664988014947&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+  </head>
+  <body>
     <section class="wrapper">
-        <div id="stars"></div>
-        <div id="stars2"></div>
-        <div id="stars3"></div>
+      <div id="stars"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
     </section>
-    
+
     <section class="z-index999">
-        <header>
-            <div class="underline">
-                <section class="nav container">
-                    <a href="index.html" id="logo">star<span>ly.</span></a>
-                    <nav>
-                        <ul>
-                            <li><a href="https://editor.starly.cz/" class="btn">Vytvořit mapu</a></li>
-                        </ul>
-                    </nav>
-                </section>
+      <header>
+        <div class="underline">
+          <section class="nav container">
+            <a href="index.html" id="logo">star<span>ly.</span></a>
+            <nav>
+              <ul>
+                <li>
+                  <a href="https://editor.starly.cz/" class="btn"
+                    >Vytvořit mapu</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </section>
+        </div>
+      </header>
+
+      <main>
+        <section class="top container">
+          <div class="top-col-1">
+            <h1>Hvězdná mapa Vašeho životního okamžiku</h1>
+            <h2>Unikátní dárek na míru, který má hluboký význam</h2>
+            <a href="https://editor.starly.cz/" class="btn">Vytvořit mapu</a>
+          </div>
+          <div class="top-col-2">
+            <img src="files/niky_uvod.png" />
+          </div>
+        </section>
+
+        <!-- waves -->
+        <div>
+          <svg
+            class="waves"
+            xmlns="https://www.w3.org/2000/svg"
+            xmlns:xlink="https://www.w3.org/1999/xlink"
+            viewBox="0 24 150 40"
+            preserveAspectRatio="none"
+            shape-rendering="auto"
+          >
+            <defs>
+              <path
+                id="surge-animation"
+                d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+              ></path>
+            </defs>
+            <g class="surge-waves">
+              <use
+                xlink:href="#surge-animation"
+                x="48"
+                y="-1"
+                fill="rgba(255,255,255,0.40)"
+              ></use>
+              <use
+                xlink:href="#surge-animation"
+                x="48"
+                y="3"
+                fill="rgba(255,255,255,0.35)"
+              ></use>
+              <use
+                xlink:href="#surge-animation"
+                x="48"
+                y="5"
+                fill="rgba(255,255,255,0.25)"
+              ></use>
+              <use
+                xlink:href="#surge-animation"
+                x="48"
+                y="8"
+                fill="rgba(255,255,255,0.20)"
+              ></use>
+              <use
+                xlink:href="#surge-animation"
+                x="48"
+                y="13"
+                fill="rgba(255,255,255,0.15)"
+              ></use>
+              <use
+                xlink:href="#surge-animation"
+                x="48"
+                y="16"
+                fill="rgba(255,255,255,0.95)"
+              ></use>
+            </g>
+          </svg>
+        </div>
+        <!-- waves -->
+
+        <section class="options">
+          <div class="underline-heading">
+            <h3>Životní okamžiky, které jsou pro Vás nejdůležitější</h3>
+          </div>
+
+          <div class="options-column container">
+            <div class="option-column">
+              <img src="files/test-option-2.png" />
+              <h4>První seznámení či první pusa</h4>
+              <p>
+                Ten unikátní okamžik, kdy z vašich hvězd se jednou pro vždy
+                stalo souhvězdí
+              </p>
             </div>
-        </header>
 
-        <main>
-            <section class="top container">
-                <div class="top-col-1">
-                    <h1>Hvězdná mapa Vašeho životního okamžiku</h1>
-                    <h2>Unikátní dárek na míru, který má hluboký význam</h2>
-                    <a href="https://editor.starly.cz/" class="btn">Vytvořit mapu</a>
-                </div>
-                <div class="top-col-2">
-                    <img src="files/niky_uvod.png">
-                </div>
-            </section>
-
-            <!-- waves -->
-            <div>
-                <svg class="waves" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" viewBox="0 24 150 40" preserveAspectRatio="none" shape-rendering="auto">
-                  <defs>
-                    <path id="surge-animation" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
-                  </defs>
-                  <g class="surge-waves">
-                    <use xlink:href="#surge-animation" x="48" y="-1" fill="rgba(255,255,255,0.40)"></use>
-                    <use xlink:href="#surge-animation" x="48" y="3" fill="rgba(255,255,255,0.35)"></use>
-                    <use xlink:href="#surge-animation" x="48" y="5" fill="rgba(255,255,255,0.25)"></use>
-                    <use xlink:href="#surge-animation" x="48" y="8" fill="rgba(255,255,255,0.20)"></use>
-                    <use xlink:href="#surge-animation" x="48" y="13" fill="rgba(255,255,255,0.15)"></use>
-                    <use xlink:href="#surge-animation" x="48" y="16" fill="rgba(255,255,255,0.95)"></use>
-                  </g>
-                </svg>
+            <div class="option-column">
+              <img src="files/test-option-1.png" />
+              <h4>Narození dítěte</h4>
+              <p>
+                Chvíle, kdy do Vašeho souhvězdí přibyla další malá hvězdička
+              </p>
             </div>
-            <!-- waves -->
 
-            <section class="options">
-                <div class="underline-heading">
-                    <h3>Životní okamžiky, které jsou pro Vás nejdůležitější</h3>
-                </div>
-
-                <div class="options-column container">
-                    <div class="option-column">
-                        <img src="files/test-option-2.png">
-                        <h4>První seznámení či první pusa</h4>
-                        <p>
-                            Ten unikátní okamžik, kdy z vašich hvězd se jednou pro vždy stalo souhvězdí
-                        </p>
-                    </div>
-
-                    <div class="option-column">
-                        <img src="files/test-option-1.png">
-                        <h4>Narození dítěte</h4>
-                        <p>
-                            Chvíle, kdy do Vašeho souhvězdí přibyla další malá hvězdička
-                        </p>
-                    </div>
-
-                    <div class="option-column">
-                        <img src="files/test-option-3.png">
-                        <h4>Ostatní události</h4>
-                        <p>
-                            Svatba, důležitý milník ve vašem životě či narození dobrého přítele
-                        </p>
-                    </div>
-                </div>
-                <section class="bg-white">
-                    <div class="margin">
-                        <div class="middle-row container">
-                            <p>
-                                Každý v životě zažíváme chvíle, které jsou pro nás osudné. Většinou tyto okamžiky zažíváme s člověkem, který má v našem životě unikátní místo. Bez něj by náš život nebyl tak úplný. Pro každého to je někdo jiný - dítě, partner, rodič či dobrý přítel. Ten, s kterým sdílíme to jedinečné, co je jen mezi námi. Je to něco magického. Něco, co víme, že existuje, ale nelze to nijak uchopit ani popsat těmi správnými slovy. K vyjádření této jedinečnosti má nejblíže hvězdná mapa či spíše hvězdy, které jako jediné, jsou svědky jednoho z našich životních okamžiků.
-                            </p>
-                        </div>   
-                    </div> 
-                </section>
-            </section>
-
-            <!-- waves -->
-            <div>
-                <svg class="waves wave-rotate" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" viewBox="0 24 150 40" preserveAspectRatio="none" shape-rendering="auto">
-                    <defs>
-                    <path id="surge-animation" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
-                    </defs>
-                    <g class="surge-waves">
-                    <use xlink:href="#surge-animation" x="48" y="-1" fill="rgba(255,255,255,0.40)"></use>
-                    <use xlink:href="#surge-animation" x="48" y="3" fill="rgba(255,255,255,0.35)"></use>
-                    <use xlink:href="#surge-animation" x="48" y="5" fill="rgba(255,255,255,0.25)"></use>
-                    <use xlink:href="#surge-animation" x="48" y="8" fill="rgba(255,255,255,0.20)"></use>
-                    <use xlink:href="#surge-animation" x="48" y="13" fill="rgba(255,255,255,0.15)"></use>
-                    <use xlink:href="#surge-animation" x="48" y="16" fill="rgba(255,255,255,0.95)"></use>
-                    </g>
-                </svg>
+            <div class="option-column">
+              <img src="files/test-option-3.png" />
+              <h4>Ostatní události</h4>
+              <p>
+                Svatba, důležitý milník ve vašem životě či narození dobrého
+                přítele
+              </p>
             </div>
-            <!-- waves -->
-
-            <section class="process container">
-                <div class="random-number">
-                    <div class="row">
-                        <img src="files/pc.png" class="img">
-                        <div class="text">
-                            <div class="number">
-                                <p>1</p>
-                            </div>
-                            <h5 class="h5">Zvěčněte své vzpomínky navždy</h5>
-                            <p class="p">
-                                V pár jednoduchých krocích si v našem editoru vytvoříte mapu dle vašich představ. První pusa, nezapomenutelné setkání, svatba či skvělá dovolená? Je to čistě na Vás! Vybrat si můžete z různých designů i velikostí.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="random-number">
-                    <div class="row">
-                        <img src="files/tisk.png" class="img img-2">
-                        <div class="text">
-                            <div class="number">
-                                <p>2</p>
-                            </div>
-                            <h5 class="h5">Odesíláme do 48 hodin</h5>
-                            <p class="p">
-                                Následně mapu vytiskneme pomocí naší prvotřídní velkoformátové tiskárny na velmi kvalitní fotografický papír. Balíme do ekologických tubusů nebo Vám mapu rovnou zarámujeme a pečlivě zabalíme, aby nedošlo k žádnému poškození.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="random-number">
-                    <div class="row">
-                        <img src="files/stolek.png" class="img">
-                        <div class="text">
-                            <div class="number">
-                                <p>3</p>
-                            </div>
-                            <h5 class="h5">Vzpomínky stále na očích</h5>
-                            <p class="p">
-                                Nyní na vyjímečné místo, kde jste byli opravdu šťastní, skutečně nezapomenete! Vytvořte si vlastní mapu, díky které se vyjímečné momenty neztratí. Čistě pro radost nebo jako projev přátelství, či lásky.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- waves -->
-            <div>
-                <svg class="waves" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" viewBox="0 24 150 40" preserveAspectRatio="none" shape-rendering="auto">
-                  <defs>
-                    <path id="surge-animation" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
-                  </defs>
-                  <g class="surge-waves">
-                    <use xlink:href="#surge-animation" x="48" y="-1" fill="rgba(255,255,255,0.40)"></use>
-                    <use xlink:href="#surge-animation" x="48" y="3" fill="rgba(255,255,255,0.35)"></use>
-                    <use xlink:href="#surge-animation" x="48" y="5" fill="rgba(255,255,255,0.25)"></use>
-                    <use xlink:href="#surge-animation" x="48" y="8" fill="rgba(255,255,255,0.20)"></use>
-                    <use xlink:href="#surge-animation" x="48" y="13" fill="rgba(255,255,255,0.15)"></use>
-                    <use xlink:href="#surge-animation" x="48" y="16" fill="rgba(255,255,255,0.95)"></use>
-                  </g>
-                </svg>
+          </div>
+          <section class="bg-white">
+            <div class="margin">
+              <div class="middle-row container">
+                <p>
+                  Každý v životě zažíváme chvíle, které jsou pro nás osudné.
+                  Většinou tyto okamžiky zažíváme s člověkem, který má v našem
+                  životě unikátní místo. Bez něj by náš život nebyl tak úplný.
+                  Pro každého to je někdo jiný - dítě, partner, rodič či dobrý
+                  přítel. Ten, s kterým sdílíme to jedinečné, co je jen mezi
+                  námi. Je to něco magického. Něco, co víme, že existuje, ale
+                  nelze to nijak uchopit ani popsat těmi správnými slovy. K
+                  vyjádření této jedinečnosti má nejblíže hvězdná mapa či spíše
+                  hvězdy, které jako jediné, jsou svědky jednoho z našich
+                  životních okamžiků.
+                </p>
+              </div>
             </div>
-            <!-- waves -->
+          </section>
+        </section>
 
-            <section class="options-ref">
-                <div class="underline-heading">
-                    <h3>Reference</h3>
+        <!-- waves -->
+        <div>
+          <svg
+            class="waves wave-rotate"
+            xmlns="https://www.w3.org/2000/svg"
+            xmlns:xlink="https://www.w3.org/1999/xlink"
+            viewBox="0 24 150 40"
+            preserveAspectRatio="none"
+            shape-rendering="auto"
+          >
+            <defs>
+              <path
+                id="surge-animation"
+                d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+              ></path>
+            </defs>
+            <g class="surge-waves">
+              <use
+                xlink:href="#surge-animation"
+                x="48"
+                y="-1"
+                fill="rgba(255,255,255,0.40)"
+              ></use>
+              <use
+                xlink:href="#surge-animation"
+                x="48"
+                y="3"
+                fill="rgba(255,255,255,0.35)"
+              ></use>
+              <use
+                xlink:href="#surge-animation"
+                x="48"
+                y="5"
+                fill="rgba(255,255,255,0.25)"
+              ></use>
+              <use
+                xlink:href="#surge-animation"
+                x="48"
+                y="8"
+                fill="rgba(255,255,255,0.20)"
+              ></use>
+              <use
+                xlink:href="#surge-animation"
+                x="48"
+                y="13"
+                fill="rgba(255,255,255,0.15)"
+              ></use>
+              <use
+                xlink:href="#surge-animation"
+                x="48"
+                y="16"
+                fill="rgba(255,255,255,0.95)"
+              ></use>
+            </g>
+          </svg>
+        </div>
+        <!-- waves -->
+
+        <section class="process container">
+          <div class="random-number">
+            <div class="row">
+              <img src="files/pc.png" class="img" />
+              <div class="text">
+                <div class="number">
+                  <p>1</p>
                 </div>
-
-                <div class="options-column-ref container">
-                    <div class="option-column-ref">
-                        <div class="ref-flex">
-                            <img src="files/ref-1.png">
-                            <h4>Veronika Kodešová</h4>
-                        </div>
-                        <p>
-                            Přijde mi to jako skvělý nápad jak si uchovat ty nejpříjemnější a nejdůležitější momenty. ☺️
-                        </p>
-                    </div>
-
-                    <div class="option-column-ref">
-                        <div class="ref-flex">
-                            <img src="files/katerina_langerova.png">
-                            <h4>Katerina Langerova</h4>
-                        </div>
-                        <p>
-                            Bezproblémové objednání. Mapy vypadají moc hezky a měly úspěch.
-                        </p>
-                    </div>
-
-                    <div class="option-column-ref">
-                        <div class="ref-flex">
-                            <img src="files/gabi-silhava.png">
-                            <h4>Gábi šilhavá</h4>
-                        </div>
-                        <p>
-                            Skvělý dárek k Valentýnu❤️ Rychlá doprava a všechno super☺️
-                        </p>
-                    </div>
-
-                    <div class="option-column-ref">
-                        <div class="ref-flex">
-                            <img src="files/kika-s.png">
-                            <h4>Kika Svatoňová</h4>
-                        </div>
-                        <p>
-                            Hezká památka na zeď a dekorace v jednom.
-                        </p>
-                    </div>
-
-                    <div class="option-column-ref">
-                        <div class="ref-flex">
-                            <img src="files/Barbora-k.png">
-                            <h4>Barbora Kopřivová</h4>
-                        </div>
-                        <p>
-                            Rozhodně zde můžete vytvořit originální dárek. Ten můj pobavil a hlavně potěšil, tak jděte do toho 🙂
-                        </p>
-                    </div>
-
-                    <div class="option-column-ref">
-                        <div class="ref-flex">
-                            <img src="files/klarka-h.png">
-                            <h4>Klárka Hortenská</h4>
-                        </div>
-                        <p>
-                            rychlé doručení, velmi pěkný rám, mapa a text přesně podle objednávky, určitě doplníme do sbírky další mapu, aby nebyla na stěně tak sama ✌👌
-                        </p>
-                    </div>
-
-                    <div class="option-column-ref">
-                        <div class="ref-flex">
-                            <img src="files/vlastik-f.png">
-                            <h4>Vlastík Fiala</h4>
-                        </div>
-                        <p>
-                            Originální dárek, který dává nejen obdarovanému mnoho radosti. Zhotovení a dodání bylo velmi rychlé. Oceňuji kvalitní zpracování nejen mapy, ale i webové stránky, kde to všechno začíná. Určitě doporučuji.
-                        </p>
-                    </div>
-
-                    <div class="option-column-ref">
-                        <div class="ref-flex">
-                            <img src="files/dana-p.png">
-                            <h4>Dana Pučálková</h4>
-                        </div>
-                        <p>
-                            Jednoduché avšak originální, snadné na přípravu, rychlé zpracování objednávky a rychlá doprava. Doporučuji. Vánoční dárek se povedl a na živo mapa v rámu vypadá opravdu moc pěkně.
-                        </p>
-                    </div>
-
-                    <div class="option-column-ref">
-                        <div class="ref-flex">
-                            <img src="files/monika-k.png">
-                            <h4>Monika Kučerová</h4>
-                        </div>
-                        <p>
-                            Rychlé dodání, krásné zpracování, nápad i vzhled 😊 Dárek měl veliký úspěch!
-                        </p>
-                    </div>
-
-                </div>
-                <div class="btn-ref container">
-                    <a href="https://editor.starly.cz/" class="btn">Vytvořit mapu</a>
-                </div>
-            </section>
-
-            <!-- waves -->
-            <div>
-                <svg class="waves wave-rotate" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" viewBox="0 24 150 40" preserveAspectRatio="none" shape-rendering="auto">
-                    <defs>
-                    <path id="surge-animation" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
-                    </defs>
-                    <g class="surge-waves">
-                    <use xlink:href="#surge-animation" x="48" y="-1" fill="rgba(255,255,255,0.40)"></use>
-                    <use xlink:href="#surge-animation" x="48" y="3" fill="rgba(255,255,255,0.35)"></use>
-                    <use xlink:href="#surge-animation" x="48" y="5" fill="rgba(255,255,255,0.25)"></use>
-                    <use xlink:href="#surge-animation" x="48" y="8" fill="rgba(255,255,255,0.20)"></use>
-                    <use xlink:href="#surge-animation" x="48" y="13" fill="rgba(255,255,255,0.15)"></use>
-                    <use xlink:href="#surge-animation" x="48" y="16" fill="rgba(255,255,255,0.95)"></use>
-                    </g>
-                </svg>
+                <h5 class="h5">Zvěčněte své vzpomínky navždy</h5>
+                <p class="p">
+                  V pár jednoduchých krocích si v našem editoru vytvoříte mapu
+                  dle vašich představ. První pusa, nezapomenutelné setkání,
+                  svatba či skvělá dovolená? Je to čistě na Vás! Vybrat si
+                  můžete z různých designů i velikostí.
+                </p>
+              </div>
             </div>
-            <!-- waves -->
-        </main>
+          </div>
 
-        <footer>
-            <div class="topline">
-                <section class="nav-footer container">
-                    <div class="footer-menu nav-item">
-                        <ul>
-                            <li><a href="/odstoupeni-od-smlouvy.html">Reklamace / odstoupení od smlouvy</a></li>
-                            <li><a href="/obchodni-podminky.html">Obchodní podmínky</a></li>
-                            <li><a href="/zpracovani-osobnich-udaju.html">Zpracování osobních údajů</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-contanct nav-item">
-                        <ul>
-                            <li>tel: +420 775 494 732</li>
-                            <li>email: info@starly.cz</li>
-                        </ul>
-                    </div>
-                    <a href="#" id="logo" class="nav-item">star<span>ly.</span></a>
-                </section>
+          <div class="random-number">
+            <div class="row">
+              <img src="files/tisk.png" class="img img-2" />
+              <div class="text">
+                <div class="number">
+                  <p>2</p>
+                </div>
+                <h5 class="h5">Odesíláme do 48 hodin</h5>
+                <p class="p">
+                  Následně mapu vytiskneme pomocí naší prvotřídní velkoformátové
+                  tiskárny na velmi kvalitní fotografický papír. Balíme do
+                  ekologických tubusů nebo Vám mapu rovnou zarámujeme a pečlivě
+                  zabalíme, aby nedošlo k žádnému poškození.
+                </p>
+              </div>
             </div>
-        </footer>
+          </div>
 
+          <div class="random-number">
+            <div class="row">
+              <img src="files/stolek.png" class="img" />
+              <div class="text">
+                <div class="number">
+                  <p>3</p>
+                </div>
+                <h5 class="h5">Vzpomínky stále na očích</h5>
+                <p class="p">
+                  Nyní na vyjímečné místo, kde jste byli opravdu šťastní,
+                  skutečně nezapomenete! Vytvořte si vlastní mapu, díky které se
+                  vyjímečné momenty neztratí. Čistě pro radost nebo jako projev
+                  přátelství, či lásky.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
 
+        <!-- waves -->
+        <div>
+          <svg
+            class="waves"
+            xmlns="https://www.w3.org/2000/svg"
+            xmlns:xlink="https://www.w3.org/1999/xlink"
+            viewBox="0 24 150 40"
+            preserveAspectRatio="none"
+            shape-rendering="auto"
+          >
+            <defs>
+              <path
+                id="surge-animation"
+                d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+              ></path>
+            </defs>
+            <g class="surge-waves">
+              <use
+                xlink:href="#surge-animation"
+                x="48"
+                y="-1"
+                fill="rgba(255,255,255,0.40)"
+              ></use>
+              <use
+                xlink:href="#surge-animation"
+                x="48"
+                y="3"
+                fill="rgba(255,255,255,0.35)"
+              ></use>
+              <use
+                xlink:href="#surge-animation"
+                x="48"
+                y="5"
+                fill="rgba(255,255,255,0.25)"
+              ></use>
+              <use
+                xlink:href="#surge-animation"
+                x="48"
+                y="8"
+                fill="rgba(255,255,255,0.20)"
+              ></use>
+              <use
+                xlink:href="#surge-animation"
+                x="48"
+                y="13"
+                fill="rgba(255,255,255,0.15)"
+              ></use>
+              <use
+                xlink:href="#surge-animation"
+                x="48"
+                y="16"
+                fill="rgba(255,255,255,0.95)"
+              ></use>
+            </g>
+          </svg>
+        </div>
+        <!-- waves -->
+
+        <section class="options-ref">
+          <div class="underline-heading">
+            <h3>Reference</h3>
+          </div>
+
+          <div class="options-column-ref container">
+            <div class="option-column-ref">
+              <div class="ref-flex">
+                <img src="files/ref-1.png" />
+                <h4>Veronika Kodešová</h4>
+              </div>
+              <p>
+                Přijde mi to jako skvělý nápad jak si uchovat ty nejpříjemnější
+                a nejdůležitější momenty. ☺️
+              </p>
+            </div>
+
+            <div class="option-column-ref">
+              <div class="ref-flex">
+                <img src="files/katerina_langerova.png" />
+                <h4>Katerina Langerova</h4>
+              </div>
+              <p>
+                Bezproblémové objednání. Mapy vypadají moc hezky a měly úspěch.
+              </p>
+            </div>
+
+            <div class="option-column-ref">
+              <div class="ref-flex">
+                <img src="files/gabi-silhava.png" />
+                <h4>Gábi šilhavá</h4>
+              </div>
+              <p>Skvělý dárek k Valentýnu❤️ Rychlá doprava a všechno super☺️</p>
+            </div>
+
+            <div class="option-column-ref">
+              <div class="ref-flex">
+                <img src="files/kika-s.png" />
+                <h4>Kika Svatoňová</h4>
+              </div>
+              <p>Hezká památka na zeď a dekorace v jednom.</p>
+            </div>
+
+            <div class="option-column-ref">
+              <div class="ref-flex">
+                <img src="files/Barbora-k.png" />
+                <h4>Barbora Kopřivová</h4>
+              </div>
+              <p>
+                Rozhodně zde můžete vytvořit originální dárek. Ten můj pobavil a
+                hlavně potěšil, tak jděte do toho 🙂
+              </p>
+            </div>
+
+            <div class="option-column-ref">
+              <div class="ref-flex">
+                <img src="files/klarka-h.png" />
+                <h4>Klárka Hortenská</h4>
+              </div>
+              <p>
+                rychlé doručení, velmi pěkný rám, mapa a text přesně podle
+                objednávky, určitě doplníme do sbírky další mapu, aby nebyla na
+                stěně tak sama ✌👌
+              </p>
+            </div>
+
+            <div class="option-column-ref">
+              <div class="ref-flex">
+                <img src="files/vlastik-f.png" />
+                <h4>Vlastík Fiala</h4>
+              </div>
+              <p>
+                Originální dárek, který dává nejen obdarovanému mnoho radosti.
+                Zhotovení a dodání bylo velmi rychlé. Oceňuji kvalitní
+                zpracování nejen mapy, ale i webové stránky, kde to všechno
+                začíná. Určitě doporučuji.
+              </p>
+            </div>
+
+            <div class="option-column-ref">
+              <div class="ref-flex">
+                <img src="files/dana-p.png" />
+                <h4>Dana Pučálková</h4>
+              </div>
+              <p>
+                Jednoduché avšak originální, snadné na přípravu, rychlé
+                zpracování objednávky a rychlá doprava. Doporučuji. Vánoční
+                dárek se povedl a na živo mapa v rámu vypadá opravdu moc pěkně.
+              </p>
+            </div>
+
+            <div class="option-column-ref">
+              <div class="ref-flex">
+                <img src="files/monika-k.png" />
+                <h4>Monika Kučerová</h4>
+              </div>
+              <p>
+                Rychlé dodání, krásné zpracování, nápad i vzhled 😊 Dárek měl
+                veliký úspěch!
+              </p>
+            </div>
+          </div>
+          <div class="btn-ref container">
+            <a href="https://editor.starly.cz/" class="btn">Vytvořit mapu</a>
+          </div>
+        </section>
+
+        <!-- waves -->
+        <div>
+          <svg
+            class="waves wave-rotate"
+            xmlns="https://www.w3.org/2000/svg"
+            xmlns:xlink="https://www.w3.org/1999/xlink"
+            viewBox="0 24 150 40"
+            preserveAspectRatio="none"
+            shape-rendering="auto"
+          >
+            <defs>
+              <path
+                id="surge-animation"
+                d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+              ></path>
+            </defs>
+            <g class="surge-waves">
+              <use
+                xlink:href="#surge-animation"
+                x="48"
+                y="-1"
+                fill="rgba(255,255,255,0.40)"
+              ></use>
+              <use
+                xlink:href="#surge-animation"
+                x="48"
+                y="3"
+                fill="rgba(255,255,255,0.35)"
+              ></use>
+              <use
+                xlink:href="#surge-animation"
+                x="48"
+                y="5"
+                fill="rgba(255,255,255,0.25)"
+              ></use>
+              <use
+                xlink:href="#surge-animation"
+                x="48"
+                y="8"
+                fill="rgba(255,255,255,0.20)"
+              ></use>
+              <use
+                xlink:href="#surge-animation"
+                x="48"
+                y="13"
+                fill="rgba(255,255,255,0.15)"
+              ></use>
+              <use
+                xlink:href="#surge-animation"
+                x="48"
+                y="16"
+                fill="rgba(255,255,255,0.95)"
+              ></use>
+            </g>
+          </svg>
+        </div>
+        <!-- waves -->
+      </main>
+
+      <footer>
+        <div class="topline">
+          <section class="nav-footer container">
+            <div class="footer-menu nav-item">
+              <ul>
+                <li>
+                  <a href="/odstoupeni-od-smlouvy.html"
+                    >Reklamace / odstoupení od smlouvy</a
+                  >
+                </li>
+                <li><a href="/obchodni-podminky.html">Obchodní podmínky</a></li>
+                <li>
+                  <a href="/zpracovani-osobnich-udaju.html"
+                    >Zpracování osobních údajů</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="footer-contanct nav-item">
+              <ul>
+                <li>tel: +420 775 494 732</li>
+                <li>email: info@starly.cz</li>
+              </ul>
+            </div>
+            <a href="#" id="logo" class="nav-item">star<span>ly.</span></a>
+          </section>
+        </div>
+      </footer>
     </section>
-
-
-</body>
+  </body>
 </html>
 
 <!--  -->
