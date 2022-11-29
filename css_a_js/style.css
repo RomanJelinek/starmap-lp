@@ -414,6 +414,112 @@
     padding: 20px;
 }
 
+.img-in-gallery-1 {
+    border-radius: 20px;
+    -webkit-box-shadow: inset 0 0px 1px 1px rgba(254, 254, 254, 0.9), 0 20px 27px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 0px 1px 1px rgba(254, 254, 254, 0.9), 0 20px 27px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    background: url(../files/product/1.png);
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+}
+
+.img-in-gallery-2 {
+    border-radius: 20px;
+    -webkit-box-shadow: inset 0 0px 1px 1px rgba(254, 254, 254, 0.9), 0 20px 27px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 0px 1px 1px rgba(254, 254, 254, 0.9), 0 20px 27px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    background: url(../files/product/2.png);
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+}
+
+
+.img-in-gallery-3 {
+    border-radius: 20px;
+    -webkit-box-shadow: inset 0 0px 1px 1px rgba(254, 254, 254, 0.9), 0 20px 27px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 0px 1px 1px rgba(254, 254, 254, 0.9), 0 20px 27px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    background: url(../files/product/3.png);
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+}
+
+.img-in-gallery-4 {
+    border-radius: 20px;
+    -webkit-box-shadow: inset 0 0px 1px 1px rgba(254, 254, 254, 0.9), 0 20px 27px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 0px 1px 1px rgba(254, 254, 254, 0.9), 0 20px 27px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    background: url(../files/product/4.png);
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+}
+
+
+.img-in-gallery-5 {
+    border-radius: 20px;
+    -webkit-box-shadow: inset 0 0px 1px 1px rgba(254, 254, 254, 0.9), 0 20px 27px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 0px 1px 1px rgba(254, 254, 254, 0.9), 0 20px 27px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    background: url(../files/product/5.png);
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+}
+
+.img-in-gallery-6 {
+    border-radius: 20px;
+    -webkit-box-shadow: inset 0 0px 1px 1px rgba(254, 254, 254, 0.9), 0 20px 27px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 0px 1px 1px rgba(254, 254, 254, 0.9), 0 20px 27px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    background: url(../files/product/6.png);
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+}
+
+.img-in-gallery-7 {
+    border-radius: 20px;
+    -webkit-box-shadow: inset 0 0px 1px 1px rgba(254, 254, 254, 0.9), 0 20px 27px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 0px 1px 1px rgba(254, 254, 254, 0.9), 0 20px 27px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    background: url(../files/product/7.png);
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+}
+
+.img-in-gallery-8 {
+    border-radius: 20px;
+    -webkit-box-shadow: inset 0 0px 1px 1px rgba(254, 254, 254, 0.9), 0 20px 27px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 0px 1px 1px rgba(254, 254, 254, 0.9), 0 20px 27px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    background: url(../files/product/8.png);
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+}
+
+.img-in-gallery-9 {
+    border-radius: 20px;
+    -webkit-box-shadow: inset 0 0px 1px 1px rgba(254, 254, 254, 0.9), 0 20px 27px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 0px 1px 1px rgba(254, 254, 254, 0.9), 0 20px 27px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    background: url(../files/product/9.png);
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+}
+
+
+
+
+
+
 .ref-flex{
     display: -webkit-box;
     display: -ms-flexbox;
