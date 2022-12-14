@@ -20,6 +20,16 @@
     font-family: 'Raleway', sans-serif;
 }
 
+.bottom-info-bar {
+    position: fixed;
+    bottom: 0;
+    background: red;
+    color: white;
+    text-align: center;
+    width: 100%;
+    left: 0
+}
+
 
 .container{
     width: min(1280px, 94%);
